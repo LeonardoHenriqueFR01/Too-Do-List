@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="content" id="home">
+        
+            <div class="title">
+        
+                <h1>To-Do-List</h1>
+        
+            </div>
+        
+            <div class="btn_s">
+            
+                <button onclick="btn_verTasks()">Ver minhas task</button>
+                <button id="btn_adciona" onclick="btn_adcionaTasks()">Adcionar task</button>
+                <button id="btn_delete" onclick="btn_deleteTasks()">Deletar task</button>
+                <button id="btn_renomeia" onclick="btn_renomeiaTasks()">Renomear task</button>
+            
+            </div>
+        
+        </div>
+
+        <div class="content-input" id="view">
+
+            <h1>To-Do-List</h1>
+
+            <form action="/submit" method="POST" autocomplete="off">
+    
+                <label for="task">Digite o nome da task</label>
+                <input type="text" name="task" id="task" required>
+
+                <div class="btn-form">
+
+                    <button id="btn-voltar" onclick="btn_voltar()">Voltar</button>
+
+                    <button id="btn-pronto" onclick="btn_pronto()">Pronto</button>
+
+                </div>
+    
+            </form>
+    
+        </div>    
+
+    </div>
+
+    <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>

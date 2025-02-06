@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/photo-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    background-color: #826251d0;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 5px 10px #0000004b;
+    color: #fff;
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.container > .content > .title > h1 {
+    font-size: 2.5em;
+}
+
+.container > .content > .btn_s > button {
+    padding: .7em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+
+.container > .content > .btn_s > button:hover {
+    padding: .9em;
+}
+
+#btn_delete {
+    background-color: red;
+}
+
+#btn_adciona {
+    background-color: green;
+}
+
+#btn_renomeia {
+    background-color: rgb(173, 173, 8);
+}
+
+.container > .content-input {
+    background-color: #826251d0;
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 5px 10px #0000004b;
+    width: 30vw;
+    height: 20vw;
+    padding: 2em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+}
+
+.container > .content-input > h1 {
+    font-size: 2.5em;
+}
+
+.container > .content-input > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .content-input > form > label {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.container > .content-input > form > input {
+    padding: .7em;
+    font-size: 1.2em;
+    width: 20vw;
+    border: 1px solid blue;
+}   
+
+.container > .content-input > form > .btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}   
+
+.container > .content-input > form > .btn-form > button {
+    padding: .7em;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 7px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.container > .content-input > form > .btn-form > button:hover {
+    padding: .8em;
+}
+
+#btn-voltar {
+    background-color: rgb(0, 153, 255);
+}
+
+#btn-pronto {
+    background-color: green;
+}
