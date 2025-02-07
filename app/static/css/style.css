@@ -35,7 +35,38 @@
     font-size: 2.5em;
 }
 
-.container > .content > .btn_s > button {
+.container > .content > .btn_s > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container > .content > .btn_s > form > input {
+    padding: .7em;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.container > .content > .btn_s > form > button {
+    padding: .6em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container > .content > .btn_s > form > button:hover {
+    padding: .8em;
+}
+
+.container > .content > .btn_s > a > button {
+    width: 15vw;
     padding: .7em;
     font-size: 1.2em;
     font-weight: bold;
@@ -46,7 +77,11 @@
     cursor: pointer;
 }
 
-.container > .content > .btn_s > button:hover {
+.container > .content > .btn_s > a {
+    text-decoration: none;
+}
+ 
+.container > .content > .btn_s > a > button:hover {
     padding: .9em;
 }
 

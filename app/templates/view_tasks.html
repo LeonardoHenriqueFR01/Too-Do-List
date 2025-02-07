@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view_tasks.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Minhas Tasks</h1>
+    
+            <div class="content">
+        
+                <ul>
+                    {% for task in tasks %}
+                        <li>
+                            {{ task.title }}
+        
+                            <!-- Link para renomear -->
+                            <a href="{{ url_for('main.rename_task', task_id=task.id) }}">
+                                <button id="btn_renomeia">Renomeia</button>
+                            </a>
+        
+                            <!-- Formulário para deletar a tarefa (usando POST) -->
+                            <form action="{{ url_for('main.delete_task', task_id=task.id) }}" method="POST" style="display:inline;">
+                                <button type="submit" onclick="return confirm('Tem certeza que deseja excluir esta task?');" id="btn_excluir">
+                                    Excluir
+                                </button>
+                            </form>
+                        </li>
+                    {% endfor %}
+                </ul>
+        
+                <div class="btn_home">
+                    <a href="{{ url_for('main.index') }}">
+                        <button id="btn_voltar">Voltar</button>
+                    </a>
+                </div>
+        
+            </div>
+
+    </div>
+
+</body>
+
+</html>

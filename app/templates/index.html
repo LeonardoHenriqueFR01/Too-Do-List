@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
@@ -25,11 +24,17 @@
         
             <div class="btn_s">
             
-                <button onclick="btn_verTasks()">Ver minhas task</button>
-                <button id="btn_adciona" onclick="btn_adcionaTasks()">Adcionar task</button>
-                <button id="btn_delete" onclick="btn_deleteTasks()">Deletar task</button>
-                <button id="btn_renomeia" onclick="btn_renomeiaTasks()">Renomear task</button>
-            
+                <a href="{{url_for('main.view_tasks')}}">
+                    <button onclick="btn_verTasks()">Ver minhas tasks</button>
+                </a>
+
+                <!-- Formulário para adicionar uma nova task -->
+                <form action="{{ url_for('main.submit') }}" method="POST">
+                    <input type="text" name="task" id="task" required placeholder="Digite o nome da task">
+                    <button type="submit">Adicionar task</button>
+                </form>
+
+    
             </div>
         
         </div>
@@ -58,6 +63,17 @@
     </div>
 
     <script src="../static/js/script.js"></script>
+
+    <!-- Exibindo as tarefas -->
+    <ul>
+        {% for task in tasks %}
+            <li>
+                {{ task.title }}  <!-- Exibe o título da task -->
+                <a href="{{ url_for('main.delete_task', task_id=task.id) }}">Deletar</a>  <!-- Link para deletar -->
+                <a href="{{ url_for('main.rename_task', task_id=task.id) }}">Renomear</a>  <!-- Link para renomear -->
+            </li>
+        {% endfor %}
+    </ul>    
 
 </body>
 

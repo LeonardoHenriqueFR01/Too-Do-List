@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renomear Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/rename.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h1>Renomear Task</h1>
+        
+        <div class="content">
+        
+            <form action="{{ url_for('main.rename_task', task_id=task.id) }}" method="POST">
+        
+                <label for="title">Novo título:</label>
+        
+                <input type="text" name="title" value="{{ task.title }}" required>
+        
+                <button type="submit">Salvar</button>
+        
+            </form>
+        
+            <a href="{{ url_for('main.index') }}">
+                <button>Voltar</button>
+            </a>
+        
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
