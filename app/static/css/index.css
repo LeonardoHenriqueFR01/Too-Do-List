@@ -346,11 +346,11 @@ main {
 }
 
 .load > button > .spin {
-    height: 23px;
-    width: 23px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
 
-    border: 1.9px solid var(--second-color);
+    border: 2px solid var(--second-color);
     border-bottom-color: transparent;
 
     animation: spin .9s ease-out infinite;
