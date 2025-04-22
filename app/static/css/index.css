@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --fist-color: #0077ff;
+    --second-color: #ffffff; 
+    --thirt-color: ;
+    --room-color: ;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+
+    border-radius: 20px;
+}
+
+.container {
+    width: 800px;
+    overflow: hidden;
+}
+
+.content {
+    width: 200%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: transform .8s ease-in-out;
+}
+
+/* Class .active para mudança de formulários */
+
+.active {
+    transform: translateX(-50%);
+}
+
+/* Configurações welcome */
+
+.welcome {
+    height: 300px;
+    width: 200px;
+    padding: 1em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--fist-color);
+    color: var(--second-color);
+}
+
+.welcome > h1 {
+    font-size: 1.7em;
+}
+
+.welcome > p {
+    font-size: .9em;
+    margin-top: 5px;
+}
+
+.welcome > a > button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: .9em;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    color: var(--second-color);
+    border: 1.5px solid var(--second-color);
+    background-color: transparent;
+}
+
+.welcome > a > button:hover {
+    transition: 1s ease-in-out;
+
+    background-color: rgb(205, 205, 226);
+}
+
+/* Configurações welcome register */
+
+.welcome_register {
+    height: 300px;
+    width: 200px;
+    padding: 1em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--fist-color);
+    color: var(--second-color);
+}
+
+.welcome_register > h1 {
+    font-size: 1.7em;
+}
+
+.welcome_register > p {
+    font-size: .9em;
+    margin-top: 5px;
+}
+
+.welcome_register > a > button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: .9em;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    color: var(--second-color);
+    border: 1.5px solid var(--second-color);
+    background-color: transparent;
+}
+
+.welcome_register > a > button:hover {
+    transition: 1s ease-in-out;
+
+    background-color: rgb(205, 205, 226);
+}
+
+/* Configurações form de login */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 300px;
+    padding: 1em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    border: 1.2px solid #000;
+}
+
+.login > h1 {
+    margin-bottom: 40px;
+}
+
+.login > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login > form > a {
+    text-align: right;
+    text-decoration: none;      
+    margin-bottom: 20px; 
+
+    color: var(--fist-color);
+}
+
+.login > form > button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: .5em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+
+    background-color: var(--fist-color);
+    color: var(--second-color);
+}
+
+.login > form > p {
+    text-align: center;
+    margin: 10px;
+}
+
+.login > form > .log-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.login > form > .log-links > a > button {
+    padding: .2em;
+    width: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+
+    border: 1px solid #000;
+
+    background-color: transparent;
+}
+
+.login > form > .log-links > a > button > img {
+    width: 15px;
+}
+
+/* Configurações form de registrar */
+
+#main_login {
+
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 300px;
+    padding: 1em;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    border: 1.2px solid #000;
+}
+
+.register > h1 {
+    margin-bottom: 40px;
+}
+
+.register > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register > form > a {
+    text-align: right;
+    text-decoration: none;      
+    margin-bottom: 20px; 
+
+    color: var(--fist-color);
+}
+
+.register > form > button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: .5em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+
+    background-color: var(--fist-color);
+    color: var(--second-color);
+}
+
+.register > form > p {
+    text-align: center;
+    margin: 10px;
+}
+
+.register > form > .log-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.register > form > .log-links > a > button {
+    padding: .2em;
+    width: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+
+    border: 1px solid #000;
+
+    background-color: transparent;
+}
+
+.register > form > .log-links > a > button > img {
+    width: 15px;
+}
+
+/* Configurações input */
+
+.row {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: em;
+
+    box-shadow: 0px 0px 2px #00000046;
+    background-color: #ececec;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.row > span {
+    padding: .1em;
+
+    border-right: 1.4px solid #000;
+}
+
+.row > input {
+    width: 87%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+
+    background-color: transparent;
+}
+
+/* Configurações spin button */
+
+#load_login {
+    display: none;
+}
+
+#load_register {
+    display: none;
+}
+
+.load > button {
+    width: 100%;
+    padding: .2em;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+
+    background-color: var(--fist-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load > button > .spin {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+
+    border: 1.9px solid var(--second-color);
+    border-bottom-color: transparent;
+
+    animation: spin .9s ease-out infinite;
+}
+
+/* Keyframe spin button */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

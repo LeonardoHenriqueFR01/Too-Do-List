@@ -7,11 +7,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../static/css/index.css">
 
 </head>
 
 <body>
+
+    <div class="container">
+
+        <div class="content" id="content">
+
+            <main id="main_login">
+
+                <section class="welcome">
+
+                    <h1>Olá, Bem-vindo! De volta</h1>
+
+                    <p>Não tem uma conta?</p>
+
+                    <a href="#">
+                        <button onclick="toggleForms()">Cadastrar</button>
+                    </a>
+
+                </section>
+
+                <section class="login">
+
+                    <h1>Entrar</h1>
+
+                    <form action="#" method="POST" autocomplete="off">
+
+                        <div class="row">
+
+                            <span class="material-symbols-outlined">Person</span>
+                            <input type="email" name="email_login" id="email_login" required minlength="12" placeholder="Email do usuário">
+
+                        </div>
+
+                        <div class="row">
+
+                            <span class="material-symbols-outlined">Lock</span>
+                            <input type="password" name="password_login" id="password_login" required minlength="8" placeholder="Senha">
+
+                        </div>
+
+                        <a href="#">
+                            <p>Esqueceu a senha?</p>
+                        </a>
+
+                        <button id="btn_login" onclick="get_spin_login()">Entrar</button>
+
+                        <div class="load" id="load_login">
+
+                            <button>
+                                <div class="spin"></div>
+                            </button>
+
+                        </div>
+
+                        <p>Ou continue com</p>
+
+                        <div class="log-links">
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/google.png" alt="Logo Google">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/facebook.png" alt="Logo FaceBook">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/github.png" alt="Logo Github">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/linkedin.png" alt="Logo Linkedin">
+                                </button>
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </main>
+
+            <main id="main_register">
+
+                <section class="register">
+
+                    <h1>Cadastrar-se</h1>
+
+                    <form action="#" method="POST" autocomplete="off">
+
+                        <div class="row">
+
+                            <span class="material-symbols-outlined">Person</span>
+                            <input type="text" name="name_register" id="name_register" required minlength="3" placeholder="Nome do usuário">
+
+                        </div>
+
+                        <div class="row">
+
+                            <span class="material-symbols-outlined">Person</span>
+                            <input type="email" name="email_register" id="email_register" required minlength="12" placeholder="Email do usuário">
+
+                        </div>
+
+                        <div class="row">
+
+                            <span class="material-symbols-outlined">Lock</span>
+                            <input type="password" name="password_register" id="password_register" required minlength="8" placeholder="Senha">
+
+                        </div>
+
+                        <button id="btn_register" onclick="get_spin_register()">Entrar</button>
+
+                        <div class="load" id="load_register">
+
+                            <button>
+                                <div class="spin"></div>
+                            </button>
+
+                        </div>
+
+                        <p>Ou continue com</p>
+
+                        <div class="log-links">
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/google.png" alt="Logo Google">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/facebook.png" alt="Logo FaceBook">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/github.png" alt="Logo Github">
+                                </button>
+                            </a>
+
+                            <a href="#">
+                                <button>
+                                    <img src="../static/imagens/linkedin.png" alt="Logo Linkedin">
+                                </button>
+                            </a>
+
+                        </div>
+
+                    </form>
+                    
+                </section>
+
+                <section class="welcome_register">
+
+                    <h1>Olá, Bem-vindo!</h1>
+
+                    <p>Já tem uma conta?</p>
+
+                    <a href="#">
+                        <button onclick="toggleForms()">Conecte-se</button>
+                    </a>
+
+                </section>
+
+            </main>
+    
+        </div>
+
+    </div>
     
     <script src="../static/js/index.js"></script>
 
