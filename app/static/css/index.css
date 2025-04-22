@@ -27,7 +27,7 @@ main {
 }
 
 .container {
-    width: 800px;
+    width: 1000px;
     overflow: hidden;
 }
 
@@ -50,8 +50,8 @@ main {
 /* Configurações welcome */
 
 .welcome {
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 300px;
     padding: 1em;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -66,16 +66,16 @@ main {
 }
 
 .welcome > h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
 }
 
 .welcome > p {
-    font-size: .9em;
-    margin-top: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .welcome > a > button {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     padding: .9em;
     margin-top: 30px;
@@ -96,8 +96,8 @@ main {
 /* Configurações welcome register */
 
 .welcome_register {
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 300px;
     padding: 1em;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -112,16 +112,16 @@ main {
 }
 
 .welcome_register > h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
 }
 
 .welcome_register > p {
-    font-size: .9em;
-    margin-top: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .welcome_register > a > button {
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bold;
     padding: .9em;
     margin-top: 30px;
@@ -146,7 +146,7 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    width: 300px;
+    width: 500px;
     padding: 1em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -155,7 +155,8 @@ main {
 }
 
 .login > h1 {
-    margin-bottom: 40px;
+    font-size: 1.7em;
+    margin-bottom: 60px;
 }
 
 .login > form {
@@ -164,6 +165,7 @@ main {
 }
 
 .login > form > a {
+    font-size: 1.2em;
     text-align: right;
     text-decoration: none;      
     margin-bottom: 20px; 
@@ -172,7 +174,7 @@ main {
 }
 
 .login > form > button {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     padding: .5em;
     border: none;
@@ -184,12 +186,14 @@ main {
 }
 
 .login > form > p {
+    font-size: 1.2em;
     text-align: center;
     margin: 10px;
 }
 
 .login > form > .log-links {
     width: 100%;
+    margin-top: 10px;
 
     display: flex;
     justify-content: space-around;
@@ -197,7 +201,7 @@ main {
 
 .login > form > .log-links > a > button {
     padding: .2em;
-    width: 50px;
+    width: 70px;
     border-radius: 7px;
     cursor: pointer;
 
@@ -207,7 +211,7 @@ main {
 }
 
 .login > form > .log-links > a > button > img {
-    width: 15px;
+    width: 25px;
 }
 
 /* Configurações form de registrar */
@@ -217,7 +221,7 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    width: 300px;
+    width: 500px;
     padding: 1em;
 
     border-top-left-radius: 15px;
@@ -227,7 +231,8 @@ main {
 }
 
 .register > h1 {
-    margin-bottom: 40px;
+    font-size: 1.7em;
+    margin-bottom: 60px;
 }
 
 .register > form {
@@ -236,6 +241,7 @@ main {
 }
 
 .register > form > a {
+    font-size: 1.2em;
     text-align: right;
     text-decoration: none;      
     margin-bottom: 20px; 
@@ -244,7 +250,7 @@ main {
 }
 
 .register > form > button {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     padding: .5em;
     border: none;
@@ -256,12 +262,14 @@ main {
 }
 
 .register > form > p {
+    font-size: 1.2em;
     text-align: center;
     margin: 10px;
 }
 
 .register > form > .log-links {
     width: 100%;
+    margin-top: 10px;
 
     display: flex;
     justify-content: space-around;
@@ -269,7 +277,7 @@ main {
 
 .register > form > .log-links > a > button {
     padding: .2em;
-    width: 50px;
+    width: 70px;
     border-radius: 7px;
     cursor: pointer;
 
@@ -279,7 +287,7 @@ main {
 }
 
 .register > form > .log-links > a > button > img {
-    width: 15px;
+    width: 25px;
 }
 
 /* Configurações input */
@@ -287,13 +295,15 @@ main {
 .row {
     margin-bottom: 10px;
     border-radius: 3px;
-    padding: em;
+    height: 40px;
+    margin-bottom: 20px;
 
     box-shadow: 0px 0px 2px #00000046;
     background-color: #ececec;
 
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .row > span {
@@ -306,7 +316,7 @@ main {
     width: 87%;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1.5em;
 
     background-color: transparent;
 }
