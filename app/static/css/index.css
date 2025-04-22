@@ -212,10 +212,6 @@ main {
 
 /* Configurações form de registrar */
 
-#main_login {
-
-}
-
 .register {
     display: flex;
     flex-direction: column;
