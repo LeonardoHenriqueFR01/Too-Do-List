@@ -36,7 +36,7 @@
 
                     <h1>Entrar</h1>
 
-                    <form action="#" method="POST" autocomplete="off">
+                    <form action="/get_user_login" method="POST" autocomplete="off">
 
                         <div class="row">
 
@@ -55,6 +55,12 @@
                         <a href="#">
                             <p>Esqueceu a senha?</p>
                         </a>
+
+                        {% if error_login %}
+                            <div class="error">
+                                <p>{{ error_login }}</p>
+                            </div>
+                        {% endif %}
 
                         <button id="btn_login" onclick="get_spin_login()">Entrar</button>
 
@@ -108,7 +114,7 @@
 
                     <h1>Cadastrar-se</h1>
 
-                    <form action="#" method="POST" autocomplete="off">
+                    <form action="/get_user_register" method="POST" autocomplete="off">
 
                         <div class="row">
 
@@ -130,6 +136,12 @@
                             <input type="password" name="password_register" id="password_register" required minlength="8" placeholder="Senha">
 
                         </div>
+
+                        {% if error_register %}
+                            <div class="error">
+                                <p>{{ error_register }}</p>
+                            </div>
+                        {% endif %}
 
                         <button id="btn_register" onclick="get_spin_register()">Entrar</button>
 

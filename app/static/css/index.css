@@ -47,6 +47,22 @@ main {
     transform: translateX(-50%);
 }
 
+/* Configurações mensagem de error */
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.error > p {
+    font-size: 1.3em;
+
+    color: red;
+}
+
 /* Configurações welcome */
 
 .welcome {
